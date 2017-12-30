@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.2.0)
+  - Gloss (0.8.0)
+  - IBAnimatable (3.1.2)
+  - PromiseKit (4.1.2):
+    - PromiseKit/Foundation (= 4.1.2)
+    - PromiseKit/QuartzCore (= 4.1.2)
+    - PromiseKit/UIKit (= 4.1.2)
+  - PromiseKit/CorePromise (4.1.2)
+  - PromiseKit/Foundation (4.1.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.2):
+    - PromiseKit/CorePromise
+  - Realm (2.1.2):
+    - Realm/Headers (= 2.1.2)
+  - Realm/Headers (2.1.2)
+  - RealmSwift (2.1.2):
+    - Realm (= 2.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Gloss (~> 0.7)
+  - IBAnimatable (~> 3.0)
+  - PromiseKit (~> 4.0)
+  - Realm (from `https://github.com/realm/realm-cocoa.git`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: 7649d3118b4366b1d138e0ced4772bca3b23ed36
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :commit: 7649d3118b4366b1d138e0ced4772bca3b23ed36
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Gloss: 866551a47ff84c9875c8dc32255c5b52c070280d
+  IBAnimatable: 26b74a72df9369d40faab97428477c246b9e42ba
+  PromiseKit: 0a4ebce07b234ef6110d613553f0a0ded6d8b913
+  Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
+  RealmSwift: 1ecd6f956dada3d1f9a0e577dd52518099b935bc
+
+PODFILE CHECKSUM: 7fc28c5a6b0fb9a56ad43bffa0c71483333073a8
+
+COCOAPODS: 1.2.0.beta.3

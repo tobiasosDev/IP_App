@@ -1,0 +1,1569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A01EC4C959C63803342D77B /* Pods_IntelliPlug_AssistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBD2A83F79B3FA90D37AD7 /* Pods_IntelliPlug_AssistantTests.framework */; };
+		2D1474E021C1F7BE6E25AD4D /* Pods_IntelliPlug_AssistantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A35EDF2B21261227919AC0 /* Pods_IntelliPlug_AssistantUITests.framework */; };
+		C93217F51EE47463005AA05C /* bluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93217F41EE47463005AA05C /* bluetoothController.swift */; };
+		C943DA5F1D886AA3003630B8 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA531D886AA3003630B8 /* AlertService.swift */; };
+		C943DA601D886AA3003630B8 /* bluetoothListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA541D886AA3003630B8 /* bluetoothListController.swift */; };
+		C943DA611D886AA3003630B8 /* colorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA551D886AA3003630B8 /* colorService.swift */; };
+		C943DA631D886AA3003630B8 /* dbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA571D886AA3003630B8 /* dbService.swift */; };
+		C943DA641D886AA3003630B8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA581D886AA3003630B8 /* Device.swift */; };
+		C943DA651D886AA3003630B8 /* deviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA591D886AA3003630B8 /* deviceCell.swift */; };
+		C943DA661D886AA3003630B8 /* deviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA5A1D886AA3003630B8 /* deviceDetailView.swift */; };
+		C943DA671D886AA3003630B8 /* devicesToConnectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA5B1D886AA3003630B8 /* devicesToConnectCell.swift */; };
+		C943DA681D886AA3003630B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA5C1D886AA3003630B8 /* User.swift */; };
+		C943DA6A1D886AA3003630B8 /* ViewControllerDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943DA5E1D886AA3003630B8 /* ViewControllerDevices.swift */; };
+		C943DA701D886BC0003630B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C943DA6F1D886BC0003630B8 /* Main.storyboard */; };
+		C98A0CAE1DA697AA00F8A52F /* EnumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A0CAD1DA697AA00F8A52F /* EnumService.swift */; };
+		C98A9F131E1D056A00C1AF1C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A9F111E1D056A00C1AF1C /* Interface.storyboard */; };
+		C98A9F151E1D056A00C1AF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98A9F141E1D056A00C1AF1C /* Assets.xcassets */; };
+		C98A9F1C1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C98A9F1B1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C98A9F231E1D056A00C1AF1C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A9F221E1D056A00C1AF1C /* InterfaceController.swift */; };
+		C98A9F251E1D056A00C1AF1C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A9F241E1D056A00C1AF1C /* ExtensionDelegate.swift */; };
+		C98A9F271E1D056A00C1AF1C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A9F261E1D056A00C1AF1C /* NotificationController.swift */; };
+		C98A9F291E1D056B00C1AF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98A9F281E1D056B00C1AF1C /* Assets.xcassets */; };
+		C98A9F2D1E1D056B00C1AF1C /* intelliPlugWatchAssistant.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C98A9F0F1E1D056A00C1AF1C /* intelliPlugWatchAssistant.app */; };
+		C9AE02371DA6E69000995D10 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AE02361DA6E69000995D10 /* IntentsUI.framework */; };
+		C9AEA5501DA9044F0095C83F /* Pods_IntelliPlug_Assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFED7C00C32EBEA3D3037E5 /* Pods_IntelliPlug_Assistant.framework */; };
+		C9AEA5521DA904530095C83F /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA5511DA904530095C83F /* IBAnimatable.framework */; };
+		C9AEA5541DA904570095C83F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA5531DA904570095C83F /* Alamofire.framework */; };
+		C9AEA5561DA9045F0095C83F /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA5551DA9045F0095C83F /* Gloss.framework */; };
+		C9AEA5581DA904640095C83F /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA5571DA904640095C83F /* PromiseKit.framework */; };
+		C9AEA55A1DA904680095C83F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA5591DA904680095C83F /* Realm.framework */; };
+		C9AEA55C1DA9046B0095C83F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA55B1DA9046B0095C83F /* RealmSwift.framework */; };
+		C9D8CC2C1D89A0CC00B576C6 /* DeviceJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8CC2B1D89A0CC00B576C6 /* DeviceJson.swift */; };
+		C9D8CC2E1D89A96C00B576C6 /* DeviceUserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8CC2D1D89A96C00B576C6 /* DeviceUserJson.swift */; };
+		C9D8CC311D89B19900B576C6 /* DeviceUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8CC301D89B19900B576C6 /* DeviceUser.swift */; };
+		C9D8CC331D89B1F900B576C6 /* UserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8CC321D89B1F900B576C6 /* UserJson.swift */; };
+		C9FBD5291D8868FE002333AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBD5281D8868FE002333AE /* AppDelegate.swift */; };
+		C9FBD52B1D8868FE002333AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBD52A1D8868FE002333AE /* ViewController.swift */; };
+		C9FBD5301D8868FE002333AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FBD52F1D8868FE002333AE /* Assets.xcassets */; };
+		C9FBD5331D8868FE002333AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FBD5311D8868FE002333AE /* LaunchScreen.storyboard */; };
+		C9FBD53E1D8868FE002333AE /* IntelliPlug_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBD53D1D8868FE002333AE /* IntelliPlug_AssistantTests.swift */; };
+		C9FBD5491D8868FE002333AE /* IntelliPlug_AssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBD5481D8868FE002333AE /* IntelliPlug_AssistantUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C98A9F1D1E1D056A00C1AF1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FBD51D1D8868FE002333AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98A9F1A1E1D056A00C1AF1C;
+			remoteInfo = "intelliPlugWatchAssistant Extension";
+		};
+		C98A9F2B1E1D056B00C1AF1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FBD51D1D8868FE002333AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98A9F0E1E1D056A00C1AF1C;
+			remoteInfo = intelliPlugWatchAssistant;
+		};
+		C9FBD53A1D8868FE002333AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FBD51D1D8868FE002333AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9FBD5241D8868FE002333AE;
+			remoteInfo = "IntelliPlug Assistant";
+		};
+		C9FBD5451D8868FE002333AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FBD51D1D8868FE002333AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9FBD5241D8868FE002333AE;
+			remoteInfo = "IntelliPlug Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C98A9F331E1D056B00C1AF1C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C98A9F1C1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98A9F351E1D056B00C1AF1C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C98A9F2D1E1D056B00C1AF1C /* intelliPlugWatchAssistant.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE021E1DA6DEEF00995D10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1AFED7C00C32EBEA3D3037E5 /* Pods_IntelliPlug_Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliPlug_Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C36E39C811FE547881C5816 /* Pods-IntelliPlug AssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliPlug AssistantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliPlug AssistantTests/Pods-IntelliPlug AssistantTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DBFE12525B229DF3252CE69 /* Pods-IntelliPlug Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliPlug Assistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliPlug Assistant/Pods-IntelliPlug Assistant.release.xcconfig"; sourceTree = "<group>"; };
+		3DE64CFE6CDC8F023F04BD69 /* Pods-IntelliPlug AssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliPlug AssistantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliPlug AssistantUITests/Pods-IntelliPlug AssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67E51D43BA281CD7DE96BDBC /* Pods-IntelliPlug AssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliPlug AssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliPlug AssistantTests/Pods-IntelliPlug AssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CBD2A83F79B3FA90D37AD7 /* Pods_IntelliPlug_AssistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliPlug_AssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A35EDF2B21261227919AC0 /* Pods_IntelliPlug_AssistantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliPlug_AssistantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93217F41EE47463005AA05C /* bluetoothController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bluetoothController.swift; sourceTree = "<group>"; };
+		C943DA531D886AA3003630B8 /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		C943DA541D886AA3003630B8 /* bluetoothListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bluetoothListController.swift; sourceTree = "<group>"; };
+		C943DA551D886AA3003630B8 /* colorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorService.swift; sourceTree = "<group>"; };
+		C943DA571D886AA3003630B8 /* dbService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dbService.swift; sourceTree = "<group>"; };
+		C943DA581D886AA3003630B8 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		C943DA591D886AA3003630B8 /* deviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = deviceCell.swift; sourceTree = "<group>"; };
+		C943DA5A1D886AA3003630B8 /* deviceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = deviceDetailView.swift; sourceTree = "<group>"; };
+		C943DA5B1D886AA3003630B8 /* devicesToConnectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = devicesToConnectCell.swift; sourceTree = "<group>"; };
+		C943DA5C1D886AA3003630B8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C943DA5E1D886AA3003630B8 /* ViewControllerDevices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDevices.swift; sourceTree = "<group>"; };
+		C943DA6F1D886BC0003630B8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C98A0CAD1DA697AA00F8A52F /* EnumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumService.swift; sourceTree = "<group>"; };
+		C98A0CAF1DA6D6C000F8A52F /* IntelliPlug Assistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "IntelliPlug Assistant.entitlements"; sourceTree = "<group>"; };
+		C98A9F0F1E1D056A00C1AF1C /* intelliPlugWatchAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelliPlugWatchAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98A9F121E1D056A00C1AF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C98A9F141E1D056A00C1AF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C98A9F161E1D056A00C1AF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98A9F1B1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "intelliPlugWatchAssistant Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98A9F211E1D056A00C1AF1C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C98A9F221E1D056A00C1AF1C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C98A9F241E1D056A00C1AF1C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C98A9F261E1D056A00C1AF1C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C98A9F281E1D056B00C1AF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C98A9F2A1E1D056B00C1AF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AE022C1DA6E68F00995D10 /* SiriExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AE02351DA6E68F00995D10 /* SiriExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AE02361DA6E69000995D10 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		C9AEA5511DA904530095C83F /* IBAnimatable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBAnimatable.framework; path = "../../../Library/Developer/Xcode/DerivedData/IntelliPlug_Assistant-hfeqnxaawokectaqqvyfjqrvqaen/Build/Products/Debug-iphoneos/IBAnimatable/IBAnimatable.framework"; sourceTree = "<group>"; };
+		C9AEA5531DA904570095C83F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/IntelliPlug_Assistant-hfeqnxaawokectaqqvyfjqrvqaen/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		C9AEA5551DA9045F0095C83F /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "../../../Library/Developer/Xcode/DerivedData/IntelliPlug_Assistant-hfeqnxaawokectaqqvyfjqrvqaen/Build/Products/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
+		C9AEA5571DA904640095C83F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/IntelliPlug_Assistant-hfeqnxaawokectaqqvyfjqrvqaen/Build/Products/Debug-iphoneos/PromiseKit/PromiseKit.framework"; sourceTree = "<group>"; };
+		C9AEA5591DA904680095C83F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/IntelliPlug_Assistant-hfeqnxaawokectaqqvyfjqrvqaen/Build/Products/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		C9AEA55B1DA9046B0095C83F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/IntelliPlug_Assistant-hfeqnxaawokectaqqvyfjqrvqaen/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		C9D8CC2B1D89A0CC00B576C6 /* DeviceJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceJson.swift; sourceTree = "<group>"; };
+		C9D8CC2D1D89A96C00B576C6 /* DeviceUserJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUserJson.swift; sourceTree = "<group>"; };
+		C9D8CC301D89B19900B576C6 /* DeviceUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUser.swift; sourceTree = "<group>"; };
+		C9D8CC321D89B1F900B576C6 /* UserJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserJson.swift; sourceTree = "<group>"; };
+		C9FBD5251D8868FE002333AE /* IntelliPlug Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IntelliPlug Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FBD5281D8868FE002333AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9FBD52A1D8868FE002333AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9FBD52F1D8868FE002333AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9FBD5321D8868FE002333AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9FBD5341D8868FE002333AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FBD5391D8868FE002333AE /* IntelliPlug AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IntelliPlug AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FBD53D1D8868FE002333AE /* IntelliPlug_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliPlug_AssistantTests.swift; sourceTree = "<group>"; };
+		C9FBD53F1D8868FE002333AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FBD5441D8868FE002333AE /* IntelliPlug AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IntelliPlug AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FBD5481D8868FE002333AE /* IntelliPlug_AssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliPlug_AssistantUITests.swift; sourceTree = "<group>"; };
+		C9FBD54A1D8868FE002333AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A7E37FC76D187165F25EB0 /* Pods-IntelliPlug Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliPlug Assistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliPlug Assistant/Pods-IntelliPlug Assistant.debug.xcconfig"; sourceTree = "<group>"; };
+		E1143FE8D8A0B84A0E4B3F32 /* Pods-IntelliPlug AssistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliPlug AssistantUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliPlug AssistantUITests/Pods-IntelliPlug AssistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC5E7EC7947FBF733996244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98A9F181E1D056A00C1AF1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE02291DA6E68F00995D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE02321DA6E68F00995D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AE02371DA6E69000995D10 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5221D8868FE002333AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AEA55C1DA9046B0095C83F /* RealmSwift.framework in Frameworks */,
+				C9AEA55A1DA904680095C83F /* Realm.framework in Frameworks */,
+				C9AEA5581DA904640095C83F /* PromiseKit.framework in Frameworks */,
+				C9AEA5561DA9045F0095C83F /* Gloss.framework in Frameworks */,
+				C9AEA5541DA904570095C83F /* Alamofire.framework in Frameworks */,
+				C9AEA5521DA904530095C83F /* IBAnimatable.framework in Frameworks */,
+				C9AEA5501DA9044F0095C83F /* Pods_IntelliPlug_Assistant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5361D8868FE002333AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A01EC4C959C63803342D77B /* Pods_IntelliPlug_AssistantTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5411D8868FE002333AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1474E021C1F7BE6E25AD4D /* Pods_IntelliPlug_AssistantUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C943DA6C1D886AD1003630B8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C943DA531D886AA3003630B8 /* AlertService.swift */,
+				C943DA551D886AA3003630B8 /* colorService.swift */,
+				C943DA571D886AA3003630B8 /* dbService.swift */,
+				C98A0CAD1DA697AA00F8A52F /* EnumService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		C943DA6D1D886AE4003630B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C93217F41EE47463005AA05C /* bluetoothController.swift */,
+				C9FBD5281D8868FE002333AE /* AppDelegate.swift */,
+				C943DA5A1D886AA3003630B8 /* deviceDetailView.swift */,
+				C943DA541D886AA3003630B8 /* bluetoothListController.swift */,
+				C943DA5E1D886AA3003630B8 /* ViewControllerDevices.swift */,
+				C9FBD52A1D8868FE002333AE /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C943DA6E1D886B95003630B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C973C6D81D89B40200DDA79B /* StoryboardModels */,
+				C9D8CC2F1D89AC5F00B576C6 /* DBModels */,
+				C9D8CC2A1D89A0A300B576C6 /* JsonModels */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C973C6D81D89B40200DDA79B /* StoryboardModels */ = {
+			isa = PBXGroup;
+			children = (
+				C943DA5B1D886AA3003630B8 /* devicesToConnectCell.swift */,
+				C943DA591D886AA3003630B8 /* deviceCell.swift */,
+			);
+			name = StoryboardModels;
+			sourceTree = "<group>";
+		};
+		C98A9F101E1D056A00C1AF1C /* intelliPlugWatchAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				C98A9F111E1D056A00C1AF1C /* Interface.storyboard */,
+				C98A9F141E1D056A00C1AF1C /* Assets.xcassets */,
+				C98A9F161E1D056A00C1AF1C /* Info.plist */,
+			);
+			path = intelliPlugWatchAssistant;
+			sourceTree = "<group>";
+		};
+		C98A9F1F1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C98A9F221E1D056A00C1AF1C /* InterfaceController.swift */,
+				C98A9F241E1D056A00C1AF1C /* ExtensionDelegate.swift */,
+				C98A9F261E1D056A00C1AF1C /* NotificationController.swift */,
+				C98A9F281E1D056B00C1AF1C /* Assets.xcassets */,
+				C98A9F2A1E1D056B00C1AF1C /* Info.plist */,
+				C98A9F201E1D056A00C1AF1C /* Supporting Files */,
+			);
+			path = "intelliPlugWatchAssistant Extension";
+			sourceTree = "<group>";
+		};
+		C98A9F201E1D056A00C1AF1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C98A9F211E1D056A00C1AF1C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9D8CC2A1D89A0A300B576C6 /* JsonModels */ = {
+			isa = PBXGroup;
+			children = (
+				C9D8CC2B1D89A0CC00B576C6 /* DeviceJson.swift */,
+				C9D8CC2D1D89A96C00B576C6 /* DeviceUserJson.swift */,
+				C9D8CC321D89B1F900B576C6 /* UserJson.swift */,
+			);
+			name = JsonModels;
+			sourceTree = "<group>";
+		};
+		C9D8CC2F1D89AC5F00B576C6 /* DBModels */ = {
+			isa = PBXGroup;
+			children = (
+				C943DA581D886AA3003630B8 /* Device.swift */,
+				C9D8CC301D89B19900B576C6 /* DeviceUser.swift */,
+				C943DA5C1D886AA3003630B8 /* User.swift */,
+			);
+			name = DBModels;
+			sourceTree = "<group>";
+		};
+		C9FBD51C1D8868FE002333AE = {
+			isa = PBXGroup;
+			children = (
+				C9FBD5271D8868FE002333AE /* IntelliPlug Assistant */,
+				C9FBD53C1D8868FE002333AE /* IntelliPlug AssistantTests */,
+				C9FBD5471D8868FE002333AE /* IntelliPlug AssistantUITests */,
+				C98A9F101E1D056A00C1AF1C /* intelliPlugWatchAssistant */,
+				C98A9F1F1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension */,
+				C9FBD5261D8868FE002333AE /* Products */,
+				CA247B0E79D8B9B650767823 /* Pods */,
+				CA035B8402B05579CBFBE4C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9FBD5261D8868FE002333AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FBD5251D8868FE002333AE /* IntelliPlug Assistant.app */,
+				C9FBD5391D8868FE002333AE /* IntelliPlug AssistantTests.xctest */,
+				C9FBD5441D8868FE002333AE /* IntelliPlug AssistantUITests.xctest */,
+				C9AE022C1DA6E68F00995D10 /* SiriExtension.appex */,
+				C9AE02351DA6E68F00995D10 /* SiriExtensionUI.appex */,
+				C98A9F0F1E1D056A00C1AF1C /* intelliPlugWatchAssistant.app */,
+				C98A9F1B1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9FBD5271D8868FE002333AE /* IntelliPlug Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				C98A0CAF1DA6D6C000F8A52F /* IntelliPlug Assistant.entitlements */,
+				C943DA6E1D886B95003630B8 /* Model */,
+				C943DA6C1D886AD1003630B8 /* Service */,
+				C943DA6D1D886AE4003630B8 /* Controller */,
+				C9FBD52F1D8868FE002333AE /* Assets.xcassets */,
+				C943DA6F1D886BC0003630B8 /* Main.storyboard */,
+				C9FBD5311D8868FE002333AE /* LaunchScreen.storyboard */,
+				C9FBD5341D8868FE002333AE /* Info.plist */,
+			);
+			path = "IntelliPlug Assistant";
+			sourceTree = "<group>";
+		};
+		C9FBD53C1D8868FE002333AE /* IntelliPlug AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9FBD53D1D8868FE002333AE /* IntelliPlug_AssistantTests.swift */,
+				C9FBD53F1D8868FE002333AE /* Info.plist */,
+			);
+			path = "IntelliPlug AssistantTests";
+			sourceTree = "<group>";
+		};
+		C9FBD5471D8868FE002333AE /* IntelliPlug AssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9FBD5481D8868FE002333AE /* IntelliPlug_AssistantUITests.swift */,
+				C9FBD54A1D8868FE002333AE /* Info.plist */,
+			);
+			path = "IntelliPlug AssistantUITests";
+			sourceTree = "<group>";
+		};
+		CA035B8402B05579CBFBE4C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9AEA55B1DA9046B0095C83F /* RealmSwift.framework */,
+				C9AEA5591DA904680095C83F /* Realm.framework */,
+				C9AEA5571DA904640095C83F /* PromiseKit.framework */,
+				C9AEA5551DA9045F0095C83F /* Gloss.framework */,
+				C9AEA5531DA904570095C83F /* Alamofire.framework */,
+				C9AEA5511DA904530095C83F /* IBAnimatable.framework */,
+				1AFED7C00C32EBEA3D3037E5 /* Pods_IntelliPlug_Assistant.framework */,
+				A9CBD2A83F79B3FA90D37AD7 /* Pods_IntelliPlug_AssistantTests.framework */,
+				B3A35EDF2B21261227919AC0 /* Pods_IntelliPlug_AssistantUITests.framework */,
+				C9AE02361DA6E69000995D10 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA247B0E79D8B9B650767823 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8A7E37FC76D187165F25EB0 /* Pods-IntelliPlug Assistant.debug.xcconfig */,
+				3DBFE12525B229DF3252CE69 /* Pods-IntelliPlug Assistant.release.xcconfig */,
+				67E51D43BA281CD7DE96BDBC /* Pods-IntelliPlug AssistantTests.debug.xcconfig */,
+				3C36E39C811FE547881C5816 /* Pods-IntelliPlug AssistantTests.release.xcconfig */,
+				E1143FE8D8A0B84A0E4B3F32 /* Pods-IntelliPlug AssistantUITests.debug.xcconfig */,
+				3DE64CFE6CDC8F023F04BD69 /* Pods-IntelliPlug AssistantUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C98A9F0E1E1D056A00C1AF1C /* intelliPlugWatchAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98A9F341E1D056B00C1AF1C /* Build configuration list for PBXNativeTarget "intelliPlugWatchAssistant" */;
+			buildPhases = (
+				C98A9F0D1E1D056A00C1AF1C /* Resources */,
+				C98A9F331E1D056B00C1AF1C /* Embed App Extensions */,
+				AAC5E7EC7947FBF733996244 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C98A9F1E1E1D056A00C1AF1C /* PBXTargetDependency */,
+			);
+			name = intelliPlugWatchAssistant;
+			productName = intelliPlugWatchAssistant;
+			productReference = C98A9F0F1E1D056A00C1AF1C /* intelliPlugWatchAssistant.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C98A9F1A1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98A9F321E1D056B00C1AF1C /* Build configuration list for PBXNativeTarget "intelliPlugWatchAssistant Extension" */;
+			buildPhases = (
+				C98A9F171E1D056A00C1AF1C /* Sources */,
+				C98A9F181E1D056A00C1AF1C /* Frameworks */,
+				C98A9F191E1D056A00C1AF1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "intelliPlugWatchAssistant Extension";
+			productName = "intelliPlugWatchAssistant Extension";
+			productReference = C98A9F1B1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C9AE022B1DA6E68F00995D10 /* SiriExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9AE02481DA6E69000995D10 /* Build configuration list for PBXNativeTarget "SiriExtension" */;
+			buildPhases = (
+				C9AE02281DA6E68F00995D10 /* Sources */,
+				C9AE02291DA6E68F00995D10 /* Frameworks */,
+				C9AE022A1DA6E68F00995D10 /* Resources */,
+				C9AE024E1DA6E82D00995D10 /* VersionNumber */,
+				C9AE024F1DA6E83900995D10 /* BuildNumber */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriExtension;
+			productName = SiriExtension;
+			productReference = C9AE022C1DA6E68F00995D10 /* SiriExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C9AE02341DA6E68F00995D10 /* SiriExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9AE02451DA6E69000995D10 /* Build configuration list for PBXNativeTarget "SiriExtensionUI" */;
+			buildPhases = (
+				C9AE02311DA6E68F00995D10 /* Sources */,
+				C9AE02321DA6E68F00995D10 /* Frameworks */,
+				C9AE02331DA6E68F00995D10 /* Resources */,
+				C9AE02501DA6E86800995D10 /* BuildNumber */,
+				C9AE02511DA6E87100995D10 /* VersionNumber */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriExtensionUI;
+			productName = SiriExtensionUI;
+			productReference = C9AE02351DA6E68F00995D10 /* SiriExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C9FBD5241D8868FE002333AE /* IntelliPlug Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FBD54D1D8868FE002333AE /* Build configuration list for PBXNativeTarget "IntelliPlug Assistant" */;
+			buildPhases = (
+				BED740A19C798F0EABDAD623 /* [CP] Check Pods Manifest.lock */,
+				2B0419E25ECE935408433054 /* [CP] Check Pods Manifest.lock */,
+				C9FBD5211D8868FE002333AE /* Sources */,
+				C9FBD5221D8868FE002333AE /* Frameworks */,
+				C9FBD5231D8868FE002333AE /* Resources */,
+				1BEEEE4CA3C482B37C96EEB2 /* [CP] Embed Pods Frameworks */,
+				29CFF1CEDBC9618B94D53DF2 /* [CP] Copy Pods Resources */,
+				C9AE021E1DA6DEEF00995D10 /* Embed Frameworks */,
+				C9AE024C1DA6E78E00995D10 /* BuildNumber */,
+				708FC9E6A20D0517546CCA95 /* 📦 Embed Pods Frameworks */,
+				AE626333CA0BD81E76DE2E8F /* 📦 Copy Pods Resources */,
+				C98A9F351E1D056B00C1AF1C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C98A9F2C1E1D056B00C1AF1C /* PBXTargetDependency */,
+			);
+			name = "IntelliPlug Assistant";
+			productName = "IntelliPlug Assistant";
+			productReference = C9FBD5251D8868FE002333AE /* IntelliPlug Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9FBD5381D8868FE002333AE /* IntelliPlug AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FBD5501D8868FE002333AE /* Build configuration list for PBXNativeTarget "IntelliPlug AssistantTests" */;
+			buildPhases = (
+				0A14D4C5F0ABC4987A4BC9A7 /* [CP] Check Pods Manifest.lock */,
+				47CFBF79E09C430788EBE226 /* [CP] Check Pods Manifest.lock */,
+				C9FBD5351D8868FE002333AE /* Sources */,
+				C9FBD5361D8868FE002333AE /* Frameworks */,
+				C9FBD5371D8868FE002333AE /* Resources */,
+				3DA82FBF99770CD0CC17EFC9 /* [CP] Embed Pods Frameworks */,
+				7379A6C12055435DCF9213D1 /* [CP] Copy Pods Resources */,
+				0AF423358AA49D562DBD5EB9 /* 📦 Embed Pods Frameworks */,
+				D69320A5FBD40E5EF5DC3843 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FBD53B1D8868FE002333AE /* PBXTargetDependency */,
+			);
+			name = "IntelliPlug AssistantTests";
+			productName = "IntelliPlug AssistantTests";
+			productReference = C9FBD5391D8868FE002333AE /* IntelliPlug AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9FBD5431D8868FE002333AE /* IntelliPlug AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FBD5531D8868FE002333AE /* Build configuration list for PBXNativeTarget "IntelliPlug AssistantUITests" */;
+			buildPhases = (
+				F365ADC327C679C616F3CEBD /* [CP] Check Pods Manifest.lock */,
+				C64B7530C9131A7C790DD976 /* [CP] Check Pods Manifest.lock */,
+				C9FBD5401D8868FE002333AE /* Sources */,
+				C9FBD5411D8868FE002333AE /* Frameworks */,
+				C9FBD5421D8868FE002333AE /* Resources */,
+				5DF1F4E1D9D4853DAE8E028D /* [CP] Copy Pods Resources */,
+				17BA732B0BB079F6FC48F93E /* 📦 Copy Pods Resources */,
+				4F345DFD90AA23247C6BAB5C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FBD5461D8868FE002333AE /* PBXTargetDependency */,
+			);
+			name = "IntelliPlug AssistantUITests";
+			productName = "IntelliPlug AssistantUITests";
+			productReference = C9FBD5441D8868FE002333AE /* IntelliPlug AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FBD51D1D8868FE002333AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = ch.intelliplug;
+				TargetAttributes = {
+					C98A9F0E1E1D056A00C1AF1C = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 48XAPJ6DGL;
+						ProvisioningStyle = Automatic;
+					};
+					C98A9F1A1E1D056A00C1AF1C = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 48XAPJ6DGL;
+						ProvisioningStyle = Automatic;
+					};
+					C9AE022B1DA6E68F00995D10 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 48XAPJ6DGL;
+						ProvisioningStyle = Automatic;
+					};
+					C9AE02341DA6E68F00995D10 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 48XAPJ6DGL;
+						ProvisioningStyle = Automatic;
+					};
+					C9FBD5241D8868FE002333AE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 48XAPJ6DGL;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
+					};
+					C9FBD5381D8868FE002333AE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 48XAPJ6DGL;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9FBD5241D8868FE002333AE;
+					};
+					C9FBD5431D8868FE002333AE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 48XAPJ6DGL;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9FBD5241D8868FE002333AE;
+					};
+				};
+			};
+			buildConfigurationList = C9FBD5201D8868FE002333AE /* Build configuration list for PBXProject "IntelliPlug Assistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9FBD51C1D8868FE002333AE;
+			productRefGroup = C9FBD5261D8868FE002333AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9FBD5241D8868FE002333AE /* IntelliPlug Assistant */,
+				C9FBD5381D8868FE002333AE /* IntelliPlug AssistantTests */,
+				C9FBD5431D8868FE002333AE /* IntelliPlug AssistantUITests */,
+				C9AE022B1DA6E68F00995D10 /* SiriExtension */,
+				C9AE02341DA6E68F00995D10 /* SiriExtensionUI */,
+				C98A9F0E1E1D056A00C1AF1C /* intelliPlugWatchAssistant */,
+				C98A9F1A1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C98A9F0D1E1D056A00C1AF1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98A9F151E1D056A00C1AF1C /* Assets.xcassets in Resources */,
+				C98A9F131E1D056A00C1AF1C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98A9F191E1D056A00C1AF1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98A9F291E1D056B00C1AF1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE022A1DA6E68F00995D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE02331DA6E68F00995D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5231D8868FE002333AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C943DA701D886BC0003630B8 /* Main.storyboard in Resources */,
+				C9FBD5331D8868FE002333AE /* LaunchScreen.storyboard in Resources */,
+				C9FBD5301D8868FE002333AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5371D8868FE002333AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5421D8868FE002333AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A14D4C5F0ABC4987A4BC9A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0AF423358AA49D562DBD5EB9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantTests/Pods-IntelliPlug AssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17BA732B0BB079F6FC48F93E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantUITests/Pods-IntelliPlug AssistantUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BEEEE4CA3C482B37C96EEB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug Assistant/Pods-IntelliPlug Assistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29CFF1CEDBC9618B94D53DF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug Assistant/Pods-IntelliPlug Assistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B0419E25ECE935408433054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3DA82FBF99770CD0CC17EFC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantTests/Pods-IntelliPlug AssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47CFBF79E09C430788EBE226 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F345DFD90AA23247C6BAB5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantUITests/Pods-IntelliPlug AssistantUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DF1F4E1D9D4853DAE8E028D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantUITests/Pods-IntelliPlug AssistantUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708FC9E6A20D0517546CCA95 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug Assistant/Pods-IntelliPlug Assistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7379A6C12055435DCF9213D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantTests/Pods-IntelliPlug AssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE626333CA0BD81E76DE2E8F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug Assistant/Pods-IntelliPlug Assistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BED740A19C798F0EABDAD623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C64B7530C9131A7C790DD976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AE024C1DA6E78E00995D10 /* BuildNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = BuildNumber;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$SRCROOT/intelliPlugWatchAssistant/Info.plist\"";
+		};
+		C9AE024E1DA6E82D00995D10 /* VersionNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = VersionNumber;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "VERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		C9AE024F1DA6E83900995D10 /* BuildNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = BuildNumber;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		C9AE02501DA6E86800995D10 /* BuildNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = BuildNumber;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		C9AE02511DA6E87100995D10 /* VersionNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = VersionNumber;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "VERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		D69320A5FBD40E5EF5DC3843 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliPlug AssistantTests/Pods-IntelliPlug AssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F365ADC327C679C616F3CEBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C98A9F171E1D056A00C1AF1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98A9F271E1D056A00C1AF1C /* NotificationController.swift in Sources */,
+				C98A9F251E1D056A00C1AF1C /* ExtensionDelegate.swift in Sources */,
+				C98A9F231E1D056A00C1AF1C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE02281DA6E68F00995D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AE02311DA6E68F00995D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5211D8868FE002333AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C943DA671D886AA3003630B8 /* devicesToConnectCell.swift in Sources */,
+				C943DA651D886AA3003630B8 /* deviceCell.swift in Sources */,
+				C9D8CC331D89B1F900B576C6 /* UserJson.swift in Sources */,
+				C943DA6A1D886AA3003630B8 /* ViewControllerDevices.swift in Sources */,
+				C9D8CC2C1D89A0CC00B576C6 /* DeviceJson.swift in Sources */,
+				C9FBD52B1D8868FE002333AE /* ViewController.swift in Sources */,
+				C93217F51EE47463005AA05C /* bluetoothController.swift in Sources */,
+				C98A0CAE1DA697AA00F8A52F /* EnumService.swift in Sources */,
+				C943DA5F1D886AA3003630B8 /* AlertService.swift in Sources */,
+				C943DA631D886AA3003630B8 /* dbService.swift in Sources */,
+				C943DA601D886AA3003630B8 /* bluetoothListController.swift in Sources */,
+				C9D8CC2E1D89A96C00B576C6 /* DeviceUserJson.swift in Sources */,
+				C9FBD5291D8868FE002333AE /* AppDelegate.swift in Sources */,
+				C943DA681D886AA3003630B8 /* User.swift in Sources */,
+				C9D8CC311D89B19900B576C6 /* DeviceUser.swift in Sources */,
+				C943DA611D886AA3003630B8 /* colorService.swift in Sources */,
+				C943DA641D886AA3003630B8 /* Device.swift in Sources */,
+				C943DA661D886AA3003630B8 /* deviceDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5351D8868FE002333AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FBD53E1D8868FE002333AE /* IntelliPlug_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FBD5401D8868FE002333AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FBD5491D8868FE002333AE /* IntelliPlug_AssistantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C98A9F1E1E1D056A00C1AF1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98A9F1A1E1D056A00C1AF1C /* intelliPlugWatchAssistant Extension */;
+			targetProxy = C98A9F1D1E1D056A00C1AF1C /* PBXContainerItemProxy */;
+		};
+		C98A9F2C1E1D056B00C1AF1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98A9F0E1E1D056A00C1AF1C /* intelliPlugWatchAssistant */;
+			targetProxy = C98A9F2B1E1D056B00C1AF1C /* PBXContainerItemProxy */;
+		};
+		C9FBD53B1D8868FE002333AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9FBD5241D8868FE002333AE /* IntelliPlug Assistant */;
+			targetProxy = C9FBD53A1D8868FE002333AE /* PBXContainerItemProxy */;
+		};
+		C9FBD5461D8868FE002333AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9FBD5241D8868FE002333AE /* IntelliPlug Assistant */;
+			targetProxy = C9FBD5451D8868FE002333AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C98A9F111E1D056A00C1AF1C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C98A9F121E1D056A00C1AF1C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C9FBD5311D8868FE002333AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FBD5321D8868FE002333AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C98A9F2E1E1D056B00C1AF1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				IBSC_MODULE = intelliPlugWatchAssistant_Extension;
+				INFOPLIST_FILE = intelliPlugWatchAssistant/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		C98A9F2F1E1D056B00C1AF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				IBSC_MODULE = intelliPlugWatchAssistant_Extension;
+				INFOPLIST_FILE = intelliPlugWatchAssistant/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		C98A9F301E1D056B00C1AF1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "intelliPlugWatchAssistant Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		C98A9F311E1D056B00C1AF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "intelliPlugWatchAssistant Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		C9AE02461DA6E69000995D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = SiriExtensionUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.SiriExtensionUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9AE02471DA6E69000995D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = SiriExtensionUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.SiriExtensionUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C9AE02491DA6E69000995D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.SiriExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9AE024A1DA6E69000995D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp.SiriExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C9FBD54B1D8868FE002333AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9FBD54C1D8868FE002333AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9FBD54E1D8868FE002333AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A7E37FC76D187165F25EB0 /* Pods-IntelliPlug Assistant.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IntelliPlug Assistant/IntelliPlug Assistant.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "IntelliPlug Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9FBD54F1D8868FE002333AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DBFE12525B229DF3252CE69 /* Pods-IntelliPlug Assistant.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IntelliPlug Assistant/IntelliPlug Assistant.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "IntelliPlug Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C9FBD5511D8868FE002333AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E51D43BA281CD7DE96BDBC /* Pods-IntelliPlug AssistantTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "IntelliPlug AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliPlug Assistant.app/IntelliPlug Assistant";
+			};
+			name = Debug;
+		};
+		C9FBD5521D8868FE002333AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C36E39C811FE547881C5816 /* Pods-IntelliPlug AssistantTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "IntelliPlug AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliPlug Assistant.app/IntelliPlug Assistant";
+			};
+			name = Release;
+		};
+		C9FBD5541D8868FE002333AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1143FE8D8A0B84A0E4B3F32 /* Pods-IntelliPlug AssistantUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "IntelliPlug AssistantUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "IntelliPlug Assistant";
+			};
+			name = Debug;
+		};
+		C9FBD5551D8868FE002333AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE64CFE6CDC8F023F04BD69 /* Pods-IntelliPlug AssistantUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 48XAPJ6DGL;
+				INFOPLIST_FILE = "IntelliPlug AssistantUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.intelliplug.IntelliPlug-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "IntelliPlug Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C98A9F321E1D056B00C1AF1C /* Build configuration list for PBXNativeTarget "intelliPlugWatchAssistant Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98A9F301E1D056B00C1AF1C /* Debug */,
+				C98A9F311E1D056B00C1AF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C98A9F341E1D056B00C1AF1C /* Build configuration list for PBXNativeTarget "intelliPlugWatchAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98A9F2E1E1D056B00C1AF1C /* Debug */,
+				C98A9F2F1E1D056B00C1AF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9AE02451DA6E69000995D10 /* Build configuration list for PBXNativeTarget "SiriExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9AE02461DA6E69000995D10 /* Debug */,
+				C9AE02471DA6E69000995D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9AE02481DA6E69000995D10 /* Build configuration list for PBXNativeTarget "SiriExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9AE02491DA6E69000995D10 /* Debug */,
+				C9AE024A1DA6E69000995D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FBD5201D8868FE002333AE /* Build configuration list for PBXProject "IntelliPlug Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FBD54B1D8868FE002333AE /* Debug */,
+				C9FBD54C1D8868FE002333AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FBD54D1D8868FE002333AE /* Build configuration list for PBXNativeTarget "IntelliPlug Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FBD54E1D8868FE002333AE /* Debug */,
+				C9FBD54F1D8868FE002333AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FBD5501D8868FE002333AE /* Build configuration list for PBXNativeTarget "IntelliPlug AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FBD5511D8868FE002333AE /* Debug */,
+				C9FBD5521D8868FE002333AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FBD5531D8868FE002333AE /* Build configuration list for PBXNativeTarget "IntelliPlug AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FBD5541D8868FE002333AE /* Debug */,
+				C9FBD5551D8868FE002333AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9FBD51D1D8868FE002333AE /* Project object */;
+}
